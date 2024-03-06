@@ -7,7 +7,7 @@ import { Clipboard } from './clipboard/clipboard.entity';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(), // ConfigModule을 AppModule에 import
+    ConfigModule.forRoot(),
     TypeOrmModule.forRootAsync({
       useFactory: () => ({
         type: 'mysql',
